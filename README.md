@@ -1,0 +1,1 @@
+![Android](https://github.com/mamrudien/klinisigma/blob/main/.github/workflows/android.yml/badge.svg)
