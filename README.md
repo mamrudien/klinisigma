@@ -1,0 +1,1 @@
+![android build status](https://github.com/mamrudien/klinisigma/actions/workflows/android.yml/badge.svg)
