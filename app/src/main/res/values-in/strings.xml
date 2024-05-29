@@ -3,4 +3,6 @@
     <string name="screentitle_timeline">Linimasa</string>
     <string name="screentitle_messages">Pesan</string>
     <string name="screentitle_myprofile">Profil Saya</string>
+    <string name="label_notification">Notifikasi</string>
+    <string name="label_more">Lebih banyak</string>
 </resources>

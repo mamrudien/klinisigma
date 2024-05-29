@@ -7,41 +7,44 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import id.ac.ugm.web.klinisigma.ui.theme.KlinisigmaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
+
         setContent {
+            val navController = rememberNavController()
+
             KlinisigmaTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                Scaffold(Modifier.fillMaxSize(),
+                    { MainTopAppBar() },
+                    { MainNavigationBar(navController) }) { innerPadding ->
+
+                    NavHost(
+                        navController = navController,
+                        startDestination = MainScreen.Timeline.route,
                         modifier = Modifier.padding(innerPadding)
-                    )
+                    ) {
+                        composable(MainScreen.Timeline.route) {
+                            //TimelineScreen()
+                        }
+                        composable(MainScreen.Message.route) {
+                            //MessageScreen()
+                        }
+                        composable(MainScreen.MyProfile.route) {
+                            //MyProfileScreen()
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    KlinisigmaTheme {
-        Greeting("Android")
-    }
-}
