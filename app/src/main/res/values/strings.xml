@@ -5,4 +5,5 @@
     <string name="screentitle_myprofile">My Profile</string>
     <string name="label_notification">Notification</string>
     <string name="label_more">More</string>
+    <string name="label_generalpractitioner">General Practitioner</string>
 </resources>
