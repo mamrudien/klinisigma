@@ -6,4 +6,8 @@
     <string name="label_notification">Notifikasi</string>
     <string name="label_more">Lebih banyak</string>
     <string name="label_generalpractitioner">Dokter Umum</string>
+    <string name="label_like">Suka</string>
+    <string name="label_comments">Komentar</string>
+    <string name="label_share">Bagikan</string>
+    <string name="label_save">Simpan</string>
 </resources>

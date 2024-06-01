@@ -6,4 +6,8 @@
     <string name="label_notification">Notification</string>
     <string name="label_more">More</string>
     <string name="label_generalpractitioner">General Practitioner</string>
+    <string name="label_like">Like</string>
+    <string name="label_comments">Comments</string>
+    <string name="label_share">Share</string>
+    <string name="label_save">Save</string>
 </resources>
