@@ -23,4 +23,5 @@ rootProject.name = "Klinisigma"
 include(":app")
 include(":base")
 include(":base:api")
+include(":datasource:api")
 include(":repositories:api")
