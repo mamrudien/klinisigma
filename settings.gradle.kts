@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Klinisigma"
 include(":app")
+include(":base")
+include(":base:api")

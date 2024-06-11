@@ -1,6 +1,7 @@
-package id.ac.ugm.web.klinisigma.physician
+package id.ac.ugm.klinisigma.physician
 
-data class PhysicianUiState(
+data class Physician(
+    val id: Long,
     val firstname: String,
     val lastname: String,
     val age: Int,
